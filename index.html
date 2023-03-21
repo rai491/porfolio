@@ -856,7 +856,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
                                     <label class=" formControlLabel" for="submit"></label>
                                     <div class="formControls">
                                         <button type="submit" name="form[submit]" id="submit"
-                                            class="rsform-submit-button  uk-button uk-button-primary">Submit</button>
+                                            class="rsform-submit-button  uk-button uk-button-primary">Please Use the Fb Messenger Chat</button>
                                         <span class="formValidation"></span>
                                     </div>
                                 </div>
@@ -999,10 +999,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
   </script>
 
   <script>
-    function disableSubmitButton() {
-  var submitButton = document.getElementById("submit");
-  submitButton.disabled = true;
-}
+  document.querySelector('#submit').disabled = true;
   </script>
     
 </body>
