@@ -43,7 +43,6 @@
     <script type="text/javascript" src="media/com_rsform/js/script.js"></script>
     <script type="text/javascript" src="../www.google.com/recaptcha/apib091.js?render=explicit"></script>
     <script type="text/javascript" src="media/plg_system_rsfprecaptchav2/js/recaptchav2.js"></script>
-    <link rel="stylesheet" type="text/css" href="media/com_rsform/css/front.css" />
 
     <!--
 <script type="text/javascript">
@@ -225,11 +224,11 @@ RSFormProUtils.addEvent(window, 'load', function(){
                     </div>
                     <div class="uk-width-1-3@m  uk-flex-last@m uk-flex-first">
                         <img class="uk-width-1-1 uk-visible@m"
-                            data-src="https://uploads-ssl.webflow.com/63e31376e4c8a14e842805b4/63ec93ed449ca852bc74b222_home_about_1.png"
-                            width="" height="" alt="" uk-img>
-                        <img class="uk-hidden@m  uk-width-3-4 "
-                            data-src="https://uploads-ssl.webflow.com/63e31376e4c8a14e842805b4/63ec8e83da25f19916f4acd0_home_about.png"
-                            width="" height="" alt="" uk-img>
+                            src="images/rocky_profile.avif"
+                            width="" height="" alt="Rocky Diana">
+                        <img class="uk-hidden@m  uk-width-3-4"
+                            src="images/rocky_profile.avif"
+                            width="" height="" alt="Rocky Diana">
                     </div>
                 </div>
 
@@ -238,7 +237,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
 
         </div>
 
-        <div class=uk-container>
+        <div class="uk-container">
             <div class="Hp-14">
                 <div class="Hp-16"></div>
             </div>
@@ -252,8 +251,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
             <div class="uk-container">
 
 
-                <div class="uk-background-top-center uk-background-contain  uk-background-norepeat"
-                    style="background-image: url(https://uploads-ssl.webflow.com/63e31376e4c8a14e842805b4/63ec8e839aa7efa67f303f88_bg-box.jpg);">
+                <div class="uk-background-top-center uk-background-contain  uk-background-norepeat services-bg">
 
 
                     <div uk-slider>
@@ -778,7 +776,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
                 <div class="uk-width-expand@m uk-text-left">
                     <h3>Contact Form</h3>
                     <form method="post" id="userForm" action="http://rockydiana.netlify.app/">
-                        <div id="rsform_error_3" style="display: none;">
+                        <div id="rsform_error_3" class="form-error-hidden">
                             <p class="formRed">Please complete all required fields!</p>
                         </div>
                         <!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
@@ -839,19 +837,17 @@ RSFormProUtils.addEvent(window, 'load', function(){
                                     <div class="formControls">
                                         <div id="g-recaptcha-29"></div>
                                         <noscript>
-                                            <div style="width: 302px; height: 352px;">
-                                                <div style="width: 302px; height: 352px; position: relative;">
-                                                    <div style="width: 302px; height: 352px; position: absolute;">
+                                            <div class="recaptcha-noscript-outer">
+                                                <div class="recaptcha-noscript-inner">
+                                                    <div class="recaptcha-noscript-iframe-wrap">
                                                         <iframe
                                                             src="https://www.google.com/recaptcha/api/fallback?k=6LeSvNAUAAAAAA4mSB2QltjnmDGSsAU2dlRTeQl_"
                                                             frameborder="0" scrolling="no"
-                                                            style="width: 302px; height:352px; border-style: none;"></iframe>
+                                                            class="recaptcha-fallback-iframe"></iframe>
                                                     </div>
-                                                    <div
-                                                        style="width: 250px; height: 80px; position: absolute; border-style: none; bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+                                                    <div class="recaptcha-noscript-response-wrap">
                                                         <textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                                            class="g-recaptcha-response"
-                                                            style="width: 250px; height: 80px; border: 1px solid #c1c1c1; margin: 0px; padding: 0px; resize: none;"></textarea>
+                                                            class="g-recaptcha-response"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -910,7 +906,7 @@ RSFormProUtils.addEvent(window, 'load', function(){
     </div>
 
     <div id="offcanvas-usage" uk-offcanvas>
-        <div class="uk-offcanvas-bar" style="padding: 0px;">
+        <div class="uk-offcanvas-bar">
             <div class="uk-width-1-1">
                 <ul class="uk-nav uk-nav-default">
                     <li><a uk-scroll="offset: 150;" href="#slider-home">Home</a></li>
