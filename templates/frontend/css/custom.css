@@ -184,7 +184,12 @@ body{
 .phone-block{
     font-family: 'Eurostile LT W01 Medium', Arial, Helvetica, sans-serif;
     font-size: 15px;
+    width: 330px !important;
+    height: 50px;
+    text-align: right;
+    position: relative;
     color: rgb(101, 195, 247);
+    background: url(../../../images/navi-sprites-2.png) no-repeat bottom left;
 }
 .uk-navbar-toggle{
     min-height: auto;
@@ -201,14 +206,6 @@ body{
     border: none;
 }
 .img-bg-mobile{position: relative;top: 6px;}
-.phone-block{
-    width: 330px !important;
-    height: 50px;
-    text-align: right;
-    position: relative;
-    color: rgb(101, 195, 247);
-    background: url(../../../images/navi-sprites-2.png) no-repeat bottom left;
-}
 
 .uk-logo img{max-width: 130% !important;}
 .uk-slideshow-nav, .uk-slider-nav {
